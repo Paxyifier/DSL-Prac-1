@@ -25,7 +25,7 @@ int main()
 {
     int arr[] = {9,8,7,3,5,2,4,1,10,6};
     int len = sizeof(arr)/sizeof(arr[0]);
-    cout << "Bubble Sort" << endl;
+    cout << "Insertion Sort" << endl;
     cout << "Unsorted Array: ";
     printArray(arr, len);
     insertionSort(arr,len);
