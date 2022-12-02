@@ -51,10 +51,16 @@ void radixsort(int arr[], int len)
 
 int main()
 {
-    int arr[] = {9, 8, 7, 3, 5, 2, 4, 1, 10, 6};
-    int len = sizeof(arr) / sizeof(arr[0]);
-    cout << "Counting Sort" << endl;
-    cout << "Unsorted array : ";
+    cout << "Radix Sort" << endl;
+    int len;
+    cout << "Enter the number of elements : " ;
+    cin >> len ;
+    int arr[len];
+    cout << "Enter the elements separated with spaces : " ;
+    for(int i=0;i<len;i++) {
+    cin >> arr[i];
+    }
+    cout << "Unsorted Array: ";
     printArray(arr, len);
     radixsort(arr, len);
     cout << "Sorted array : ";
